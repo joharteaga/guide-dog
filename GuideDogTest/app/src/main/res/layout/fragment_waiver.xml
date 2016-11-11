@@ -1,0 +1,78 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cs4351.guidedogtest.WaiverFragment"
+    android:background="#2196f3"
+    android:elevation="3dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/waiverTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/hello_blank_fragment"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            />
+
+        <!-- Scrollview incase we decide to use 'official' language -->
+        <ScrollView
+            android:id="@+id/scrollingWaiver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/waiverTitle"
+            android:layout_above="@+id/agreeButton"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:id="@+id/waiverText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/waiverTextLong"
+                android:textSize="25sp"
+                android:background="#fff"/>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/agreeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AGREE"
+            android:textColor="#fff"
+            android:textSize="55sp"
+            android:layout_marginBottom="5dp"
+            android:layout_above="@+id/disagreeButton"
+            android:background="#0a0"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:elevation="2dp"
+            android:clickable="true"
+            />
+
+        <Button
+            android:id="@+id/disagreeButton"
+            android:text="DISAGREE"
+            android:textSize="55sp"
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/agreeButton"
+            android:layout_alignRight="@id/agreeButton"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:background="#f00"
+            android:elevation="2dp"
+            android:clickable="true"/>
+    </RelativeLayout>
+</FrameLayout>

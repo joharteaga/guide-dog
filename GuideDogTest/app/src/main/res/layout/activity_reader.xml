@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_reader"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.cs4351.guidedogtest.ReaderActivity"
+    android:background="#2196f3">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/readerText"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#fff"/>
+
+    <Button
+        android:id="@+id/lightButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/ocrButton"
+        android:layout_marginRight="5dp"
+        android:text="LIGHT"
+        android:textSize="25sp"
+        android:textColor="#fff"
+        android:background="@color/colorPrimaryDark"
+        android:elevation="2dp"
+        android:layout_above="@+id/readerReturn"/>
+
+    <Button
+        android:id="@+id/ocrButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="OCR"
+        android:textSize="25sp"
+        android:textColor="#fff"
+        android:background="@color/colorPrimaryDark"
+        android:elevation="2dp"/>
+
+    <Button
+        android:id="@+id/readerReturn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/ocrButton"
+        android:layout_marginLeft="5dp"
+        android:text="MENU"
+        android:textSize="25sp"
+        android:textColor="#fff"
+        android:background="@color/colorPrimaryDark" />
+
+</RelativeLayout>
