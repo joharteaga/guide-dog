@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Guide Dog</string>
+
+    <!-- WaiverFragment strings -->
+    <string name="hello_blank_fragment">Release of Liability</string>
+    <string name="waiverTextLong">By using the Navigation feature of this Guide Dog application,
+        the user hereby does agrees to release, forever discharge, and hold harmless the Guide Dog
+        development team and all affiliates for any and all harm occurring to the user resulting from
+        the use of the Navigation feature of the Guide Dog application.</string>
+
+    <!-- NavigationActivity strings -->
+    <string name="navigationText">Implement camera screen here.\nAlso, a light button.</string>
+
+    <!-- ReaderActivity strings -->
+    <string name="readerText">Implement reader screen here.\nAlso, a light button and OCR button.</string>
+</resources>
