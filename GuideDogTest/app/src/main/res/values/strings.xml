@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">Guide Dog</string>
+    <string name="permlab_flashlight">Flashlight Permission</string>
+    <string name="permdesc_flashlight">Flashlight needed for reader and navigation.</string>
 
     <!-- WaiverFragment strings -->
     <string name="hello_blank_fragment">Release of Liability</string>

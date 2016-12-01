@@ -12,16 +12,12 @@ import android.widget.Button;
 import android.widget.Toast;
 
 
-/**
- * A simple {@link Fragment} subclass.
- */
 public class WaiverFragment extends Fragment implements View.OnClickListener {
     private View view;
     private Button agree;
     private Button disagree;
 
     public WaiverFragment() {
-        // Required empty public constructor
     }
 
 
